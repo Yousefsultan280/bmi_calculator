@@ -30,17 +30,17 @@ class BMICubit extends Cubit<BMIState> {
 
   void calculateBMI() {
     var bmi = state.weight / (state.height * state.height) * 10000;
-    String result;
+    String res;
     if (bmi < 18.5) {
-      result = "Underweight";
+      res = "Underweight";
     } else if (bmi >= 18.5 && bmi <= 24.9) {
-      result = "Normal weight";
+      res = "Normal weight";
     } else if (bmi >= 25 && bmi <= 29.9) {
-      result = "Overweight";
+      res = "Overweight";
     } else {
-      result = "Obese";
+      res = "Obese";
     }
 
-    emit(state.copyWith(result: result));
+    emit(state.copyWith(result: res));
   }
 }

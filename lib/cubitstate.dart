@@ -1,5 +1,3 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
-
 class BMIState {
   final int height;
   final int weight;
@@ -8,10 +6,10 @@ class BMIState {
   final String result;
 
   BMIState({
-    this.height = 160,
-    this.weight = 80,
-    this.age = 30,
-    this.isMale = false,
+    this.height = 183,
+    this.weight = 73,
+    this.age = 21,
+    this.isMale = true,
     this.result = '',
   });
 
